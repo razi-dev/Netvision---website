@@ -8,11 +8,12 @@ on:
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Use Node.js
+      - name: Use Node.js 18
         uses: actions/setup-node@v4
         with:
           node-version: '18'
@@ -21,17 +22,14 @@ jobs:
         working-directory: ./frontend
         run: npm ci
 
-      - name: Build project
+      - name: Build React app
         working-directory: ./frontend
         run: npm run build
 
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_NETVISION_95 }}"
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_NETVISION_95 }}'
           channelId: live
           projectId: netvision-95
-        env:
-          FIREBASE_CLI_EXPERIMENTS: webframeworks
-
