@@ -1,20 +1,20 @@
-📘 NetVision – Real-Time Network Analyzer (Frontend)
+ NetVision – Real-Time Network Analyzer (Frontend)
 
 A modern React-based web application that displays real-time network quality, internet speed visualization, and user measurement history as part of the NetVision project.
 
 This application is deployed on Firebase Hosting with GitHub Actions CI/CD for automated builds and deployments.
 
-🚀 Live Demo
+ Live Demo--------------------------
 
 🔗 Hosted URL:
 https://netvision-95.web.app
 
-📂 Repository
+Repository--------------------------------------
 
 GitHub Repo:
 https://github.com/razi-dev/Netvision---website
 
-🛠 Tech Stack
+🛠 Tech Stack-------------------------------
 
 React (Create React App)
 
@@ -26,22 +26,22 @@ Firebase Hosting
 
 GitHub Actions (CI/CD)
 
-📦 Project Setup
-1️⃣ Clone the Repository
+ Project Setup------------------------------------
+1 .Clone the Repository
 git clone https://github.com/razi-dev/Netvision---website.git
 cd Netvision---website/frontend
 
-2️⃣ Install Dependencies
+2️. Install Dependencies
 npm install
 
-3️⃣ Run in Development Mode
+3️. Run in Development Mode
 npm start
 
 
 Runs the app locally at
 http://localhost:3000/
 
-4️⃣ Create Production Build
+4️. Create Production Build
 npm run build
 
 
@@ -49,7 +49,7 @@ The output will be saved in:
 
 frontend/build
 
-🔥 Firebase Hosting Setup
+ Firebase Hosting Setup-----------------------------------------
 
 The project uses Firebase Hosting to serve the production build.
 
@@ -68,7 +68,7 @@ firebase.json used:
   }
 }
 
-⚙️ CI/CD Pipeline (GitHub Actions)
+ CI/CD Pipeline (GitHub Actions)-------------------------------------------------
 
 Every push to the master branch triggers the GitHub workflow:
 
@@ -114,19 +114,19 @@ jobs:
           channelId: live
           projectId: netvision-95
 
-📊 Features
+ Features-----------------------------------------
 
-📡 Real-time internet quality visualization
+-- Real-time internet quality visualization
 
-🗺 Heatmap-style UI (planned or implemented by backend)
+-- Heatmap-style UI (planned or implemented by backend)
 
-📂 User measurement history display
+-- User measurement history display
 
-🔐 Login/Authentication (if implemented)
+-- Login/Authentication (if implemented)
 
-🧭 Clean and modern UI
+-- Clean and modern UI
 
-🧪 Folder Structure
+-- Folder Structure
 Netvision---website/
 │
 ├── frontend/        # React application source code
@@ -139,10 +139,10 @@ Netvision---website/
 └── .github/
     └── workflows/   # CI/CD configuration files
 
-🤝 Contribution
+-- Contribution
 
 Pull requests and improvements are welcome.
 
-📄 License
+-- License
 
 This project is maintained as part of an internship assignment.
